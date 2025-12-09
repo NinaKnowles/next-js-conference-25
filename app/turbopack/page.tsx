@@ -7,39 +7,53 @@ export default function TurbopackPage() {
       <div className={styles.container}>
         <Link href="/" className={styles.back}>← Back to Home</Link>
 
-        <h1 className={styles.title}>Turbopack</h1>
+        <h1 className={styles.title}>Turbopack - Now Stable!</h1>
 
         <p className={styles.intro}>
-          Turbopack is Next.js's new Rust-powered bundler, delivering significantly
-          faster builds and Hot Module Replacement (HMR).
+          Turbopack is Next.js's Rust-powered bundler and is now <strong>stable and the default</strong>
+          in Next.js 16! It delivers significantly faster builds and Hot Module Replacement (HMR).
         </p>
 
         <div className={styles.features}>
           <div className={styles.feature}>
+            <h3>🎉 Turbopack is Now the Default in Next.js 16!</h3>
+            <p>
+              As of Next.js 16, Turbopack is stable and the default bundler for all projects.
+              No configuration needed - it just works!
+            </p>
+            <div className={styles.highlight}>
+              <p><strong>✅ Stable for Development</strong></p>
+              <p><strong>✅ Default Bundler</strong></p>
+              <p><strong>✅ 2-5x Faster Production Builds</strong></p>
+              <p><strong>✅ Up to 10x Faster Fast Refresh</strong></p>
+            </div>
+          </div>
+
+          <div className={styles.feature}>
             <h3>Performance Improvements</h3>
             <p>Turbopack provides massive speed improvements over Webpack:</p>
             <ul>
-              <li><strong>10x faster</strong> local dev server startup</li>
-              <li><strong>700x faster</strong> updates with Fast Refresh</li>
-              <li><strong>4x faster</strong> production builds</li>
-              <li>Incremental compilation for instant updates</li>
+              <li><strong>Up to 10x faster</strong> Fast Refresh (HMR)</li>
+              <li><strong>2-5x faster</strong> production builds</li>
+              <li><strong>Instant updates</strong> with incremental compilation</li>
+              <li><strong>50%+ adoption rate</strong> already in the community</li>
             </ul>
           </div>
 
           <div className={styles.feature}>
             <h3>How to Use Turbopack</h3>
             <p>
-              In Next.js 15, Turbopack is stable for development. Enable it with the <code>--turbopack</code> flag:
+              In Next.js 16, Turbopack is enabled by default. No configuration needed!
             </p>
-            <pre><code>{`# Development with Turbopack
-npm run dev -- --turbopack
+            <pre><code>{`# Just run dev as normal - Turbopack is automatic
+npm run dev
 
-# Or add to package.json
-{
-  "scripts": {
-    "dev": "next dev --turbopack"
-  }
-}`}</code></pre>
+# Turbopack is the default bundler
+# No --turbopack flag needed anymore!`}</code></pre>
+            <p className={styles.note}>
+              The <code>--turbopack</code> flag is still supported for compatibility,
+              but it's no longer necessary.
+            </p>
           </div>
 
           <div className={styles.feature}>

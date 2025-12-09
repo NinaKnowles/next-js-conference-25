@@ -1,0 +1,146 @@
+.main {
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #0070f3;
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 1.125rem;
+  color: #aaa;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0070f3;
+}
+
+.feature h4 {
+  font-size: 1.125rem;
+  margin: 1.5rem 0 0.75rem 0;
+  color: #fff;
+}
+
+.feature p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.feature ol {
+  color: #ccc;
+  line-height: 1.8;
+  margin-left: 1.5rem;
+}
+
+.feature ol li {
+  margin-bottom: 0.5rem;
+}
+
+.feature ul {
+  color: #ccc;
+  line-height: 1.8;
+  margin-left: 1.5rem;
+}
+
+.feature ul li {
+  margin-bottom: 0.5rem;
+}
+
+.feature ul li strong {
+  color: #fff;
+}
+
+.feature pre {
+  margin-top: 1rem;
+}
+
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.before,
+.after {
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.before {
+  background: rgba(255, 165, 0, 0.05);
+  border: 1px solid rgba(255, 165, 0, 0.3);
+}
+
+.before h4 {
+  color: #ffa500;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.after {
+  background: rgba(0, 255, 0, 0.05);
+  border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+.after h4 {
+  color: #88ff88;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.comparison pre {
+  margin: 0;
+}
+
+.warning {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 165, 0, 0.1);
+  border-left: 3px solid #ffa500;
+  border-radius: 4px;
+}
+
+.warning p {
+  color: #ffa500;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .comparison {
+    grid-template-columns: 1fr;
+  }
+}

@@ -11,10 +11,31 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Explore the latest features from Next.js 15 and React 19
+          Explore the latest features from Next.js 16 and React 19
         </p>
 
         <div className={styles.grid}>
+          <Link href="/use-cache" className={styles.card}>
+            <h2>"use cache" Directive →</h2>
+            <p>
+              New opt-in caching model with explicit control over what gets cached
+            </p>
+          </Link>
+
+          <Link href="/proxy-example" className={styles.card}>
+            <h2>proxy.ts →</h2>
+            <p>
+              Replaces middleware.ts with clearer network boundary handling
+            </p>
+          </Link>
+
+          <Link href="/turbopack" className={styles.card}>
+            <h2>Turbopack (Stable!) →</h2>
+            <p>
+              Now the default bundler! 2-5x faster builds, up to 10x faster HMR
+            </p>
+          </Link>
+
           <Link href="/react19-features" className={styles.card}>
             <h2>React 19 Features →</h2>
             <p>
@@ -44,23 +65,16 @@ export default function Home() {
             </p>
           </Link>
 
-          <Link href="/turbopack" className={styles.card}>
-            <h2>Turbopack →</h2>
-            <p>
-              Lightning-fast dev server with improved HMR and build times
-            </p>
-          </Link>
-
           <Link href="/caching" className={styles.card}>
-            <h2>Caching Updates →</h2>
+            <h2>Legacy Caching (Pre-16) →</h2>
             <p>
-              New caching defaults and fetch behavior in Next.js 15
+              Old caching behavior from Next.js 15 (replaced by "use cache")
             </p>
           </Link>
         </div>
 
         <div className={styles.footer}>
-          <p>Built with Next.js 15.1 + React 19 + Turbopack</p>
+          <p>Built with Next.js 16 + React 19 + Turbopack</p>
         </div>
       </div>
     </main>
