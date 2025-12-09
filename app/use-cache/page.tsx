@@ -1,18 +1,18 @@
+'use cache';
+
 import Link from 'next/link';
 import styles from './page.module.css';
 
-// Note: "use cache" is announced but not yet fully available in Next.js 16
-// This page demonstrates what it will look like when it's available
+// Example of a cached function with "use cache"
 async function getCachedData() {
-  // In the future, you would add: 'use cache';
-  // For now, we'll simulate the behavior
+  'use cache';
 
   // Simulate expensive operation
   await new Promise(resolve => setTimeout(resolve, 100));
 
   return {
     timestamp: new Date().toISOString(),
-    message: 'This shows how "use cache" will work!'
+    message: 'This data is cached!'
   };
 }
 
