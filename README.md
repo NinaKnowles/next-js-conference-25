@@ -40,7 +40,6 @@ A comprehensive demo showcasing the latest features from **Next.js 16** and Reac
 - React Compiler (now stable)
 
 ### ⚡ Other Features
-- **Async Request APIs**: `params`, `searchParams`, `headers()`, and `cookies()` are now async
 - **Server Actions**: Enhanced form handling with progressive enhancement
 - **Streaming & Suspense**: Advanced patterns with Partial Prerendering (PPR)
 
@@ -78,7 +77,6 @@ app/
 ├── proxy-example/          # proxy.ts examples (NEW!)
 ├── turbopack/              # Turbopack information (now stable!)
 ├── react19-features/       # React 19 demos
-├── async-request/          # Async Request APIs demo
 ├── form-actions/           # Server Actions & forms demo
 └── streaming/              # Streaming & Suspense demo
 ```
@@ -124,21 +122,14 @@ Explore the new React 19 hooks and capabilities:
 - `use()` hook for Promises
 - Document metadata
 
-### 5. Async Request APIs (`/async-request`)
-Learn about the async APIs:
-- Async `searchParams`
-- Async `params`
-- Async `headers()`
-- Async `cookies()`
-
-### 6. Server Actions & Forms (`/form-actions`)
+### 5. Server Actions & Forms (`/form-actions`)
 Interactive demo of Server Actions:
 - Progressive enhancement
 - Automatic loading states
 - Form validation
 - Type-safe actions
 
-### 7. Streaming & Suspense (`/streaming`)
+### 6. Streaming & Suspense (`/streaming`)
 See streaming in action:
 - Progressive rendering
 - Suspense boundaries

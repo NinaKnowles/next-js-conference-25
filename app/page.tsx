@@ -44,13 +44,6 @@ export default function Home() {
             </p>
           </Link>
 
-          <Link href="/async-request" className={styles.card}>
-            <h2>Async Request APIs →</h2>
-            <p>
-              Access params, searchParams, headers, and cookies asynchronously
-            </p>
-          </Link>
-
           <Link href="/form-actions" className={styles.card}>
             <h2>Server Actions →</h2>
             <p>
