@@ -190,12 +190,12 @@ function NotificationBell() {
           </div>
 
           <div className={styles.feature}>
-            <h3>Migration from Next.js 15</h3>
+            <h3>Migration from Next.js 16</h3>
             <p>
-              In Next.js 15, routes were static by default if possible. In Next.js 16,
+              In Next.js 16, routes were static by default if possible. In Next.js 16,
               routes are dynamic by default. To maintain static behavior:
             </p>
-            <pre><code>{`// Old (Next.js 15)
+            <pre><code>{`// Old (Next.js 16)
 export default async function Page() {
   const data = await fetch(url); // Cached by default
   return <div>{data}</div>;

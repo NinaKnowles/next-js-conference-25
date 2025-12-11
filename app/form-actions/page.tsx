@@ -11,7 +11,7 @@ export default function FormActionsPage() {
         <h1 className={styles.title}>Server Actions & Forms</h1>
 
         <p className={styles.intro}>
-          Next.js 15 + React 19 make form handling incredibly simple with Server Actions,
+          Next.js 16 + React 19 make form handling incredibly simple with Server Actions,
           automatic pending states, and progressive enhancement.
         </p>
 

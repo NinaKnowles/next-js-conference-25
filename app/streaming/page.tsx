@@ -20,7 +20,7 @@ export default function StreamingPage() {
         <h1 className={styles.title}>Streaming & Suspense</h1>
 
         <p className={styles.intro}>
-          Next.js 15 enhances streaming with improved Suspense support and
+          Next.js 16 enhances streaming with improved Suspense support and
           Partial Prerendering (PPR) for instant page loads.
         </p>
 

@@ -2,7 +2,10 @@ import Link from 'next/link';
 import { cookies, headers } from 'next/headers';
 import styles from './page.module.css';
 
-// Next.js 15: params and searchParams are now async
+// Force dynamic rendering since we use headers and cookies
+export const dynamic = 'force-dynamic';
+
+// Next.js 16: params and searchParams are now async
 export default async function AsyncRequestPage({
   searchParams,
 }: {
@@ -12,7 +15,7 @@ export default async function AsyncRequestPage({
   const resolvedSearchParams = await searchParams;
   const demo = resolvedSearchParams.demo || 'none';
 
-  // Await cookies and headers (now async in Next.js 15)
+  // Await cookies and headers (now async in Next.js 16)
   const cookieStore = await cookies();
   const headersList = await headers();
 
@@ -27,7 +30,7 @@ export default async function AsyncRequestPage({
         <h1 className={styles.title}>Async Request APIs</h1>
 
         <p className={styles.intro}>
-          Next.js 15 introduces async versions of request APIs for better compatibility
+          Next.js 16 uses async versions of request APIs for better compatibility
           with React's async rendering model.
         </p>
 

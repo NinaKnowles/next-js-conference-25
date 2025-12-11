@@ -64,13 +64,6 @@ export default function Home() {
               Advanced streaming patterns with React Suspense and PPR
             </p>
           </Link>
-
-          <Link href="/caching" className={styles.card}>
-            <h2>Legacy Caching (Pre-16) →</h2>
-            <p>
-              Old caching behavior from Next.js 15 (replaced by "use cache")
-            </p>
-          </Link>
         </div>
 
         <div className={styles.footer}>

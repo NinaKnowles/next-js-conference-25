@@ -30,7 +30,7 @@ export default function React19Features() {
         <h1 className={styles.title}>React 19 Features</h1>
 
         <p className={styles.intro}>
-          React 19 introduces powerful new features that work seamlessly with Next.js 15
+          React 19 introduces powerful new features that work seamlessly with Next.js 16
         </p>
 
         <div className={styles.features}>

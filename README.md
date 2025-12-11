@@ -80,8 +80,7 @@ app/
 ├── react19-features/       # React 19 demos
 ├── async-request/          # Async Request APIs demo
 ├── form-actions/           # Server Actions & forms demo
-├── streaming/              # Streaming & Suspense demo
-└── caching/                # Legacy caching (pre-Next.js 16)
+└── streaming/              # Streaming & Suspense demo
 ```
 
 ## Key Technologies
@@ -145,12 +144,6 @@ See streaming in action:
 - Suspense boundaries
 - Partial Prerendering (PPR)
 - Loading states
-
-### 8. Legacy Caching (`/caching`)
-Old caching behavior from Next.js 15:
-- How caching worked before "use cache"
-- Migration strategies to Next.js 16
-- fetch() caching changes
 
 ## Development Scripts
 
