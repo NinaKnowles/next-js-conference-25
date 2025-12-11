@@ -2,10 +2,8 @@ import Link from 'next/link';
 import { cookies, headers } from 'next/headers';
 import styles from './page.module.css';
 
-// Force dynamic rendering since we use headers and cookies
-export const dynamic = 'force-dynamic';
-
 // Next.js 16: params and searchParams are now async
+// Note: This page is automatically dynamic because it uses headers() and cookies()
 export default async function AsyncRequestPage({
   searchParams,
 }: {
